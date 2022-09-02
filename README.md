@@ -4,15 +4,16 @@
 
 
 ## IF AND ELSE
-
+```cls
 // Example of If and Else comparing numbers;
+
 Integer n1 = 10;
 Integer n2 = 9;
 Integer n3 = 8;
 
 if(n1 > n2 && n1 > n3){
         System.debug('O primeiro número é o maior de todos!');
-    } else if (n2 > n1 && n2 > n3){
+        } else if (n2 > n1 && n2 > n3){
         System.debug('O segundo número é o maior de todos!');
     } else {
         System.debug('O terceiro número é o maior de todos!');
@@ -39,7 +40,7 @@ if(preco < 30){
 
 
 ## ARRAYS
-
+```cls
 /* Types of ARRAYS:
 SET - Does not accept repeated value (Finds by value. Does not have index);
 LIST - Accepts repeated values ​​(It has index and locates by position);
@@ -88,7 +89,7 @@ melhoresAlbuns[2] = 'Clara Nunes'; // Outra forma de atribuir valor a uma posiç
 
 
 ## METHODS /  FUNCTIONS
-
+```cls
 // Example of a simple function using Static to allow invoking the function without having to instantiate the class;
 Public Class Calculadora {
     
@@ -115,7 +116,7 @@ Public Class Calculadora {
 Calculadora.calculo(5,'*',5);
 
 ## SOQL
-
+```cls
 // Simple Query example;
 SELECT Id, Name
 FROM Account
@@ -156,7 +157,7 @@ FROM Despesas__r),
 FROM Projetos__r)
 FROM Account
 ## APEX
-
+```cls
 // Delete all records that were created between July 1st and August 2nd by the Query;
 List<Projeto__c> lstProjeto = [SELECT Id, numeroProjeto__c, CreatedDate FROM Projeto__c WHERE CreatedDate>=2022-07-01T00:00:00Z AND CreatedDate<2022-08-03T00:00:00Z];
 
@@ -207,7 +208,7 @@ for(Despesa__c Counter: lstDesp){
 }
 
 ## TRIGGER
-
+```cls
 // Simple example of Trigger structure organized by time and action;
 Trigger LeadTrigger on Lead (before INSERT, before UPDATE, after INSERT, after UPDATE){
     
@@ -226,7 +227,7 @@ Trigger LeadTrigger on Lead (before INSERT, before UPDATE, after INSERT, after U
 }
 
 ## BO / HANDLER
-
+```cls
 // Simple example of a BO class that houses the methods called by the Trigger;
 Public Class LeadBO {
     
@@ -261,7 +262,7 @@ Public Class LeadBO {
 }
 
 ## TEST CLASS
-
+```cls
 // Simple test class example: testing all calculator possibilities;
 @IsTest
 Public Class CalculadoraTest {
