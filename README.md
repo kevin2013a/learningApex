@@ -38,7 +38,7 @@ if(preco < 30){
     System.debug('Ir embora!');
 }
 
-
+```
 ## ARRAYS
 ```cls
 /* Types of ARRAYS:
@@ -87,7 +87,7 @@ melhoresAlbuns.add(0,'Black Ice'); // Adicionando valor a uma posição específ
 melhoresAlbuns.set(1, 'Acustico MTV'); // Atribui valor a uma posição já existente
 melhoresAlbuns[2] = 'Clara Nunes'; // Outra forma de atribuir valor a uma posição já existente
 
-
+```
 ## METHODS /  FUNCTIONS
 ```cls
 // Example of a simple function using Static to allow invoking the function without having to instantiate the class;
@@ -114,7 +114,7 @@ Public Class Calculadora {
 
 // Invoking the function (Without needing to instantiate);
 Calculadora.calculo(5,'*',5);
-
+```
 ## SOQL
 ```cls
 // Simple Query example;
@@ -156,6 +156,7 @@ FROM Despesas__r),
 ( SELECT Id, Name
 FROM Projetos__r)
 FROM Account
+```
 ## APEX
 ```cls
 // Delete all records that were created between July 1st and August 2nd by the Query;
@@ -206,7 +207,7 @@ for(Despesa__c Counter: lstDesp){
         UPDATE Counter;
     }
 }
-
+```
 ## TRIGGER
 ```cls
 // Simple example of Trigger structure organized by time and action;
@@ -225,7 +226,7 @@ Trigger LeadTrigger on Lead (before INSERT, before UPDATE, after INSERT, after U
    
     }
 }
-
+```
 ## BO / HANDLER
 ```cls
 // Simple example of a BO class that houses the methods called by the Trigger;
@@ -260,7 +261,7 @@ Public Class LeadBO {
         }  
     } 
 }
-
+```
 ## TEST CLASS
 ```cls
 // Simple test class example: testing all calculator possibilities;
@@ -333,3 +334,4 @@ Public Class CaseTest {
         System.assert (newCase.Type == 'Other', 'O caso não esta igual a Other');
     }
 }
+```
